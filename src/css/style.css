@@ -1,0 +1,79 @@
+* {
+	font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+table {
+	width: 14rem;
+	aspect-ratio: 1;
+	border-collapse: collapse;
+}
+
+td {
+	font-size: 1.6rem;
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 2px solid #2b2a33;
+	user-select: none;
+}
+
+td:hover {
+	background-color: #52525e;
+	border-radius: 0.3rem;
+}
+
+button {
+	font-size: 1.6rem;
+	padding: 0.5rem;
+	cursor: pointer;
+	border: none;
+	border-radius: 0.3rem;
+	background-color: #2b2a33;
+}
+
+button:where(:focus-within, :hover) {
+	background-color: #52525e;
+}
+
+#c0,
+#c2,
+#c6,
+#c8 {
+	border: none;
+}
+
+#c1 {
+	border-top: none;
+}
+
+#c3 {
+	border-left: none;
+}
+
+#c5 {
+	border-right: none;
+}
+
+#c7 {
+	border-bottom: none;
+}
+
+.content {
+	display: grid;
+	place-items: center;
+	height: 100svh;
+}
+
+.board {
+	display: flex;
+	flex-direction: column;
+	align-self: start;
+	gap: 1.6rem;
+}
